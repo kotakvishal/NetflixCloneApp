@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StepOneActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_step_one" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="552dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            layout="@layout/lock_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"></include>
+
+        <TextView
+            android:id="@+id/stepTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/step1to3_string"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="@string/chooseYourPlanString"
+            android:textColor="@color/black"
+            android:layout_marginEnd="25dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:contentDescription="@string/imageDescriptionString"
+                    android:src="@drawable/ic_baseline_check_24" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:contentDescription="@string/imageDescriptionString"
+                    android:src="@drawable/ic_baseline_check_24" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:contentDescription="@string/imageDescriptionString"
+                    android:src="@drawable/ic_baseline_check_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="283dp"
+                android:layout_height="264dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="265dp"
+                    android:layout_height="58dp"
+                    android:text="@string/noCommitmentString"
+                    android:textColor="#494242"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="266dp"
+                    android:layout_height="61dp"
+                    android:text="@string/everythingOnLowPrice"
+                    android:textColor="#494242"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="268dp"
+                    android:layout_height="64dp"
+                    android:text="@string/noadsString"
+                    android:textColor="#494242"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/seeyourplanbutton"
+        android:layout_width="346dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/red"
+        android:text="@string/seeYourPlansButtonText"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+</RelativeLayout>

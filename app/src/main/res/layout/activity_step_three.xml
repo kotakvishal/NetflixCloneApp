@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.StepThreeActivity">
+    <include layout="@layout/tool_stepthree"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="126dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:contentDescription="@string/lockicon"/>
+
+            <ImageView
+                android:layout_width="187dp"
+                android:layout_height="122dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@string/lockicon"
+                android:src="@drawable/ic_baseline_radio_button_unchecked_24" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/stepthree"
+            android:layout_width="226dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:text="@string/stepthreeofThree"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setPaymentText"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="243dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:text="@string/membershipStartText"
+            android:textAlignment="center"
+            android:textColor="@color/colorGreyForText"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="254dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/noCommitmentStringForStepThree"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/paymentlinearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_stroke"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/creditOrDebit"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/visacard"
+                android:contentDescription="@string/visacard"/>
+
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/mastercard"
+                android:contentDescription="@string/masterCard"/>
+
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/americanexpress"
+                android:contentDescription="@string/americanExpress"/>
+
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/lastcard"
+                android:contentDescription="@string/lastcard"/>
+
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="2dp" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/ic_baseline_chevron_right_24"
+                android:contentDescription="@string/moveFurther"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

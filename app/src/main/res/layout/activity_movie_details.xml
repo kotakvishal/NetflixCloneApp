@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/black"
+    android:layout_height="match_parent"
+    android:background="@color/greyForMovieDetailsBackground"
+    tools:context=".MainScreens.MovieDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imagedeatils"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        app:layout_constraintBottom_toTopOf="@+id/moviename"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_logo_netflix"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/imageDescriptionString"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playbutton"
+        android:layout_width="401dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/moviename"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/playbuttonstroke"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_baseline_play_arrow_24"
+        android:text="@string/playButtonString"
+        android:textColor="@color/red"
+        android:foregroundGravity="center_horizontal"
+        android:textSize="20sp"
+        android:paddingEnd="40dp"
+        android:paddingStart="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/moviename"
+        android:layout_width="403dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="@string/movies"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imagedeatils"/>
+
+
+</RelativeLayout>

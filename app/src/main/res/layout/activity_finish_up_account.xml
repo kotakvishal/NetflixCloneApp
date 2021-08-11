@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.FinishUpAccountActivity">
+    <include
+        layout="@layout/toolbar_step_one">
+    </include>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:contentDescription="@string/lockicon"
+        android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/step1of3finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/steptwo"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/finishSettingAccountText"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:gravity="center"
+        android:text="@string/StepTwoMajorTextView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueButtonFinishActivity"
+        android:layout_width="251dp"
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/red"
+        android:text="@string/continueText"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

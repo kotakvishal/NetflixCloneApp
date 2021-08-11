@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ChooseYourPlanActivity">
+    <include layout="@layout/toolbar_step_one"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="-4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/planExpiredText"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/upgrade_downgradeString"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonforbasic_pay_overdue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:buttonTint="#0097A7">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="241dp"
+                        android:layout_height="49dp"
+                        android:text="@string/basic"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/basicPriceFormat"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+                <ImageView
+                    android:layout_width="287dp"
+                    android:layout_height="179dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/basicplanimage"
+                    android:contentDescription="@string/basic">
+
+                </ImageView>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonforstandard_pay_overdue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:buttonTint="#0097A7">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="241dp"
+                        android:layout_height="49dp"
+                        android:text="@string/standard"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/standardPriceFormat"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/standardplanimage"
+                    android:contentDescription="@string/standard">
+
+                </ImageView>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonforpremium_pay_overdue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:buttonTint="#0097A7">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="241dp"
+                        android:layout_height="49dp"
+                        android:text="@string/premium"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/premiumPriceFormat"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_marginTop="85dp"
+                    android:src="@drawable/premiumplanimage"
+                    android:contentDescription="@string/premium">
+
+                </ImageView>
+
+
+            </androidx.cardview.widget.CardView>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="5dp"></Space>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:id="@+id/payButton"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/red"
+                android:text="@string/payString"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"></Space>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
