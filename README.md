@@ -29,7 +29,7 @@ This is the clone of Netflix app which covers all the basic functionality given 
 * Set up firestore in firebase to store the user information
 * Add SHA-256 key of your project to firebase
 * Run it and enjoy!!
-## Prerequisite
+## System Requirements
 * Can run on any android phone or tablet with android version 5.0 or above.
 
 
