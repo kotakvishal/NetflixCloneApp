@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,23 +13,57 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.NetflixClone">
-        <activity android:name=".MainScreens.VideoPlayerActivity"/>
-        <activity android:name=".MainScreens.MovieDetailsActivity" />
-        <activity android:name=".MainScreens.SettingsActivity" />
-        <activity android:name=".MainScreens.SearchActivity" />
-        <activity android:name=".MainScreens.TvSeriesActivity" />
-        <activity android:name=".MainScreens.MoviesActivities" />
-        <activity android:name=".Activities.PaymentOverdueActivity" />
-        <activity android:name=".MainScreens.MainScreenActivity" />
-        <activity android:name=".Activities.PaymentGatewayActivity" />
-        <activity android:name=".Activities.StepThreeActivity" />
-        <activity android:name=".Activities.StepTwoActivity" />
-        <activity android:name=".Activities.FinishUpAccountActivity" />
-        <activity android:name=".Activities.ChooseYourPlanActivity" />
-        <activity android:name=".Activities.StepOneActivity" />
-        <activity android:name=".Activities.SwipeScreenActivity" />
-        <activity android:name=".Activities.SignInActivity" />
-        <activity android:name=".Activities.SplashScreenActivity"
+        <activity
+            android:name=".MainScreens.VideoPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreens.MovieDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreens.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreens.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreens.TvSeriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreens.MoviesActivities"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PaymentOverdueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreens.MainScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PaymentGatewayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StepThreeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StepTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FinishUpAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ChooseYourPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StepOneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SwipeScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:exported="true"
             tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
